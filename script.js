@@ -1,32 +1,18 @@
-var rows = 5;
-var columns = 5;
-
-var currTile;
+var rows = 3;
+var columns = 3;
+var curTile;
 var otherTile;
-
-var turns = 0; // keeps track of the number of turns
+var turns =0;
+var imgOrder = ["1","2","3","4","5","6","7","8","9"];
 
 window.onload = function() {
-    // initialize the 5x5 game board
-    for (let r = 0; r < rows; r++) {
-        for (let c = 0; c < columns; c++) {
-        // img tag
+    for (let r=0; r < rows; r++) {
+        for (let c=0; c < columns; c++) {
+
+            //<img>
             let tile = document.createElement("img");
-            tile.src = ".avocado.jpg";
-
-            document.getElementById("board").append(tile);
+            tile.id = r.toString() + "-" + c.toString();
+            tile.src = imgOrder.shift() + ".jpg";
         }
-    }
-
-    //pieces
-    let pieces = [];
-    for (let i=1; i <= rows*columns; i ++) {
-        pieces.push(i.toString()); // put 1 to 25 into the array (puzzle image names)
-    }
-
-    for (let i =0; i < pieces.length; i++) {
-        let tile = document.createElement("img");
-        tile.src = "avocado" + pieces[i] + ".jpg";
-        document.getElementById("pieces").append(tile);
     }
 }
