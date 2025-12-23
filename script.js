@@ -11,8 +11,11 @@ window.onload = function() {
 
             //<img>
             let tile = document.createElement("img");
+            debugger;
             tile.id = r.toString() + "-" + c.toString();
-            tile.src = imgOrder.shift() + ".jpg";
+            tile.src = "grid-tiles/" + imgOrder.shift() + ".jpg";
+
+            document.getElementById("board").append(tile);
         }
     }
 }
