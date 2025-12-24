@@ -1,6 +1,6 @@
 var rows = 3;
 var columns = 3;
-var curTile;
+var currTile;
 var otherTile;
 var turns =0;
 //var imgOrder = ["1","2","3","4","5","6","7","8","9"];
@@ -30,3 +30,30 @@ window.onload = function() {
     }
 }
 
+function dragStart() {
+    currTile = this; // this refers to the img tile being dragged
+}
+
+function dragOver(e) {
+    e.preventDefault();
+}
+
+function dragEnter(e) {
+    e.preventDefault();
+}
+
+function dragLeave() {
+
+}
+
+function dragDrop() {
+    otherTile = this; //this refers to the img tile being dropped on
+}
+
+function dragEnd() {
+    let currImg = currTile.src;
+    let otherImg = otherTile.src;
+
+    currTile.src = otherImg;
+    otherTile.src = currImg;
+}
