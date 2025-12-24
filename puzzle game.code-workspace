@@ -1,13 +1,10 @@
 {
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "../Downloads/grid-tiles"
-		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "puzzle game"
-	}
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "puzzle game"
+    }
 }

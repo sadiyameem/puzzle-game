@@ -15,7 +15,8 @@ window.onload = function() {
             let tile = document.createElement("img");
             debugger;
             tile.id = r.toString() + "-" + c.toString();
-            tile.src = "grid-tiles/" + imgOrder.shift() + ".jpg";
+            debugger
+            tile.src = "grid-tiles/1.jpg";
 
             // drag function
             tile.addEventListener("dragstart", dragStart); //click an image to drag
