@@ -84,4 +84,7 @@ if (!otherTile.src.includes("tile-3.jpg")) {
 
     currTile.src = otherImg;
     otherTile.src = currImg;
+
+    turns += 1;
+    document.getElementById("turns").innerText = turns;
 }
