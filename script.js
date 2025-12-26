@@ -1,4 +1,4 @@
-// run all puzzle code after the apge is ready
+// run all puzzle code after the page is ready
 document.addEventListener("DOMContentLoaded",()=>{
     const cells = [...document.querySelectorAll(".cell")];
     const puzzle = document.querySelector('.puzzle');
